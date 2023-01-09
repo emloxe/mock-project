@@ -9,7 +9,7 @@ async function assertDatabaseConnectionOk() {
   try {
     await sequelize.authenticate();
     // 自动同步所有模型，如果表不存在，就创建该表，破坏性操作，慎用
-    await sequelize.sync({ force: true });
+    // await sequelize.sync({ force: true });
     console.log("Database connection OK!");
   } catch (error) {
     console.log("Unable to connect to the database:");

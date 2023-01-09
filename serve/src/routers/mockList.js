@@ -12,13 +12,11 @@ router.prefix(`${config.api}/mockList`);
 // 获取数据
 router.get("/list", async (ctx) => {
   let { page = 1, pageSize = 20, group_id } = ctx.query;
-  let all = await model.batchGetPage({group_id: group_id}, { page, pageSize });
+  let all = await model.batchGet({group_id: group_id}, { page, pageSize });
   ctx.body = {
     code: 0,
     data: {
-      list: all.rows,
-      total: all.count, // 总共有多少条数据
-      page: parseInt(page), // 第几页
+      list: all,
     },
   };
 });
