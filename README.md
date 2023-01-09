@@ -1,4 +1,13 @@
-# 
+# 服务启动
+
+首先本地需要开启mysql服务，配置文件在 serve>src>config>overWrite
+
+分别进入2个文件夹
+> npm start
+
+
+
+
 
 
 
