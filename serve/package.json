@@ -1,0 +1,39 @@
+{
+  "name": "serve",
+  "version": "1.0.0",
+  "description": "后台代码",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon  --trace-deprecation index.js ",
+    "start": "node  --trace-deprecation index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "emloxe",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "chalk": "^4.1.1",
+    "glob": "^7.1.7",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^5.0.1",
+    "koa-csrf": "^3.0.8",
+    "koa-mount": "^4.0.0",
+    "koa-response-time": "^2.1.0",
+    "koa-router": "^10.0.0",
+    "koa-session": "^6.2.0",
+    "koa-static": "^5.0.0",
+    "koa-static-cache": "^5.1.4",
+    "koa-websocket": "^6.0.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "mockjs": "^1.1.0",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.15",
+    "portfinder": "^1.0.28",
+    "sequelize": "^6.6.4",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-koa": "^0.0.1"
+  }
+}
