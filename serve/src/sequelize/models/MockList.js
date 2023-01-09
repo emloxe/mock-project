@@ -27,7 +27,6 @@ const tableStructure = {
   name: {
     allowNull: false,
     type: DataTypes.STRING,
-    unique: true,
   },
   path: {
     type: DataTypes.STRING,

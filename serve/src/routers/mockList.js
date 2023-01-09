@@ -33,7 +33,7 @@ router.post("/add", async (ctx) => {
     .catch((reason) => {
       ctx.body = {
         code: 1,
-        msg: "添加出错",
+        msg:  Object.prototype.toString.call(reason)=="[object String]" ? reason :  "添加出错",
         error: reason,
       };
     });
