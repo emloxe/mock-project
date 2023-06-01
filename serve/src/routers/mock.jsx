@@ -1,11 +1,11 @@
 
 /**
  * @swagger
- * /api/v1/mock/list:
+ * /api/v1/mockGroup/list:
  *    get:
  *      tags:
  *      - mock
- *      summary: 获取列表
+ *      summary: 获取分组列表
  *      produces:
  *      - application/json
  *      parameters:
