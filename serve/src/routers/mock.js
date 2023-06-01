@@ -75,5 +75,26 @@ router.get("/:path", async (ctx) => {
 });
 
 
+// post请求可以返回请求体附带的数据
+router.post("/:path", async (ctx) => {
+  let data = ctx.request.body;
+  const {path} = ctx.params;
+  let one = await model.get({path});
+  if(one) {
+    var obj = eval('(' + one.code + ')');
+    obj.data = {
+      ...obj.data,
+      ...data
+    }
+    ctx.body = Mock.mock(obj);
+  } else {
+    ctx.body = {
+      code: 1,
+      msg: '未成功解析数据'
+    };
+  }
+});
+
+
 
 module.exports = router;
