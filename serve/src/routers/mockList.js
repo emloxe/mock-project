@@ -11,8 +11,8 @@ router.prefix(`${config.api}/mockList`);
 
 // 获取数据
 router.get("/list", async (ctx) => {
-  let { page = 1, pageSize = 20, group_id } = ctx.query;
-  let all = await model.batchGet({group_id: group_id}, { page, pageSize });
+  let { group_id } = ctx.query;
+  let all = await model.batchGet({group_id: group_id});
   ctx.body = {
     code: 0,
     data: {
