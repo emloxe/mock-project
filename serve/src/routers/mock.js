@@ -56,8 +56,9 @@ Mock.Random.extend({
 })
 
 
+
 // 获取数据
-router.get("/:path", async (ctx) => {
+router.get("/:path+", async (ctx) => {
   const {path} = ctx.params;
 
   let one = await model.get({path});
@@ -76,7 +77,7 @@ router.get("/:path", async (ctx) => {
 
 
 // post请求可以返回请求体附带的数据
-router.post("/:path", async (ctx) => {
+router.post("/:path+", async (ctx) => {
   let data = ctx.request.body;
   const {path} = ctx.params;
   let one = await model.get({path});
