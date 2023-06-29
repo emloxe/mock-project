@@ -16,4 +16,7 @@ https://github.com/demopark/sequelize-docs-Zh-CN
 
 
 # mock文档
-https://github.com/nuysoft/Mock/wiki/Basic
+
+文档： https://github.com/nuysoft/Mock/wiki/Basic
+
+示例： http://mockjs.com/examples.html
