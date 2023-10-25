@@ -26,7 +26,7 @@ const CreateDrawer = (props, ref) => {
   const [open, setOpen] = useState(false);
   const [id, setId] = useState('');
   const [code, setCode] = useState(
-    "{\r\n  code: 0,\r\n  data: {},\r\n  msg: '成功'\r\n}"
+    '{\r\n  "code": 0,\r\n  "data": {},\r\n  "msg": "成功"\r\n}'
   );
   const [name, setName] = useState('');
   const [path, setPath] = useState('');
@@ -38,7 +38,7 @@ const CreateDrawer = (props, ref) => {
   useEffect(() => {}, []);
 
   const setAllData = ({
-    code = "{\r\n  code: 0,\r\n  data: {},\r\n  msg: '成功'\r\n}",
+    code = '{\r\n  "code": 0,\r\n  "data": {},\r\n  "msg": "成功"\r\n}',
     name = '',
     path = '',
     group_id = '',

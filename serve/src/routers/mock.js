@@ -52,7 +52,12 @@ Mock.Random.extend({
   },
   idcard: function() {
     return getId_no()
-  }
+  },
+  pic: function() {
+    const color = '#' + this.integer(188, 255).toString(16) +  this.integer(140, 255).toString(16) +  this.integer(120, 220).toString(16);
+    const size = this.integer(300, 500) + 'x' + this.integer(300, 500);
+    return this.image(size, color)
+  },
 })
 
 
